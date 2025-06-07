@@ -25,15 +25,16 @@ cd Notes-App
 Сервер (backend)
 
 ```bash
-cd server
-npm install
+cd backend
+npm init -y
+npm install express cors body-parser fs uuid
 ```
 
 Клієнт (frontend)
 
 ```bash
 cd ../frontend
-npm install
+npm install axios
 ```
 
 ---
@@ -44,8 +45,8 @@ npm install
 1. Запустити сервер
 
 ```bash
-cd server
-npm start
+cd backend
+node server.js
 ```
 
 Сервер запуститься на `http://localhost:5000`.
@@ -62,13 +63,13 @@ npm start
 Структура проєкту
 
 ```
-notes-app/
+Notes-App/
 │
 ├── frontend/              # React фронтенд
 │   ├── src/
 │   └── public/
 │
-├── server/              # Express сервер
+├── backend/              # Express сервер
 │   ├── routes/
 │   ├── utils/
 │   └── data/notes.json  # Локальне сховище нотаток
