@@ -16,8 +16,8 @@ Notes App
 1. Клонування репозиторію
 
 ```bash
-git clone https://github.com/your-username/notes-app.git
-cd notes-app
+git clone https://github.com/kattriinaa/Notes-App.git
+cd Notes-App
 ```
 
 2. Встановлення залежностей
@@ -32,7 +32,7 @@ npm install
 Клієнт (frontend)
 
 ```bash
-cd ../client
+cd ../frontend
 npm install
 ```
 
@@ -53,7 +53,7 @@ npm start
 2. Запустити клієнт
 
 ```bash
-cd ../client
+cd ../frontend
 npm start
 ```
 
@@ -64,7 +64,7 @@ npm start
 ```
 notes-app/
 │
-├── client/              # React фронтенд
+├── frontend/              # React фронтенд
 │   ├── src/
 │   └── public/
 │
