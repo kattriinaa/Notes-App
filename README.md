@@ -1,57 +1,77 @@
 Notes App
-Простий CRUD-додаток для створення, редагування та видалення нотаток. Складається з бекенду на Node.js + Express та фронтенду на React.
 
-Структура проєкту
-root/
-├── backend/          # Express сервер
-│   ├── data/         # JSON-файл з нотатками
-│   ├── routes/       # Ендпоінти API
-│   └── utils/        # Робота з файлами
-├── frontend/         # React-додаток
-└── README.md
+Це простий CRUD застосунок для створення, редагування, видалення та пошуку нотаток. Побудований на стеку: React (frontend) + Express (backend) + File Storage (JSON).
 
-Запуск проєкту
-Передумови
-Node.js (рекомендовано: версія 18+)
-    npm або yarn
+Функціонал
+
+- Додавання нотаток
+- Редагування нотаток
+- Видалення нотаток
+- Пошук нотаток за заголовком
+- Адаптивний дизайн
+
+
+Встановлення та запуск
 
 1. Клонування репозиторію
-git clone https://github.com/kattriinaa/Notes-App.git
-cd Notes-App
 
-2. Установка залежностей
-Бекенд
-cd backend
+```bash
+git clone https://github.com/your-username/notes-app.git
+cd notes-app
+```
+
+2. Встановлення залежностей
+
+Сервер (backend)
+
+```bash
+cd server
 npm install
+```
 
-Фронтенд
-cd ../frontend
+Клієнт (frontend)
+
+```bash
+cd ../client
 npm install
+```
 
-3. Запуск
-Запустити бекенд
-cd backend
-node index.js
-Сервер запуститься на http://localhost:5000
+---
 
-Запустити фронтенд
-cd ../frontend
+Запуск
+У режимі розробки
+
+1. Запустити сервер
+
+```bash
+cd server
 npm start
-React-додаток відкриється на http://localhost:3000
+```
 
-API ендпоінти
-GET /notes – отримати всі нотатки
+Сервер запуститься на `http://localhost:5000`.
 
-POST /notes – створити нову нотатку
+2. Запустити клієнт
 
-PUT /notes/:id – оновити нотатку
+```bash
+cd ../client
+npm start
+```
 
-DELETE /notes/:id – видалити нотатку
+Клієнт запуститься на `http://localhost:3000`.
 
-Можливості
-- Додавання нових нотаток
-- Редагування існуючих
-- Видалення
-- Пошук за заголовком
-- Адаптивний інтерфейс
+Структура проєкту
 
+```
+notes-app/
+│
+├── client/              # React фронтенд
+│   ├── src/
+│   └── public/
+│
+├── server/              # Express сервер
+│   ├── routes/
+│   ├── utils/
+│   └── data/notes.json  # Локальне сховище нотаток
+│
+└── README.md
+```
